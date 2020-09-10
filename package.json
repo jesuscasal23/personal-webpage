@@ -1,0 +1,22 @@
+{
+  "name": "personal-webpage",
+  "version": "1.0.0",
+  "description": "personal webpage",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesuscasal23/personal-webpage.git"
+  },
+  "author": "Jesus Casal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesuscasal23/personal-webpage/issues"
+  },
+  "homepage": "https://github.com/jesuscasal23/personal-webpage#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
