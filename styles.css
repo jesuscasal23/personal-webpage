@@ -14,16 +14,16 @@ p {
   .landing .image {
     height: 400px;
     margin: 0px 30px; }
-  .landing h1 {
-    font-size: 45px;
-    margin: 0; }
   .landing .texcontainer {
     flex-grow: 0.2;
     width: 300px; }
-  .landing ul {
-    padding-left: 20px; }
-  .landing .list_elements {
-    margin-bottom: 20px; }
+    .landing .texcontainer h1 {
+      font-size: 45px;
+      margin: 0; }
+    .landing .texcontainer ul {
+      padding-left: 20px; }
+    .landing .texcontainer .list_elements {
+      margin-bottom: 20px; }
   .landing .button {
     background: linear-gradient(264.47deg, #e065ff -11.85%, #6500e4 100%);
     border-radius: 20px;
@@ -40,22 +40,24 @@ p {
     margin-right: -50px; }
 
 .CV {
-  margin-top: 100px; }
-  .CV .container {
-    display: flex;
-    justify-content: space-around; }
+  position: relative;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 1000px; }
   .CV .task {
     background: rgba(196, 196, 196, 0.13);
     border-radius: 10px;
     position: relative;
-    margin-bottom: 150px;
-    padding-right: 70px;
-    padding-left: 20px;
-    max-width: 450px; }
+    width: 350px; }
     .CV .task_right {
       text-align: right;
-      padding-right: 20px;
-      padding-left: 70px; }
+      margin-top: 100px;
+      margin-left: 38px; }
+    .CV .task_left {
+      margin-bottom: 150px;
+      margin-right: 25px; }
     .CV .task .circle {
       border-radius: 100%;
       background: #6c06e6;
@@ -67,9 +69,36 @@ p {
       border-style: solid;
       border-width: 4px;
       border-color: white; }
-      .CV .task .circle_right {
-        left: -20px;
-        top: -20px; }
+      .CV .task .circle .curvedLine {
+        position: absolute;
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: transparent; }
+        .CV .task .circle .curvedLine_pointingRight {
+          border-top-left-radius: 30px;
+          border-top: 5px solid white;
+          border-left: 5px solid white;
+          top: -45px;
+          left: 22px; }
+        .CV .task .circle .curvedLine_pointingLeft {
+          border-top-right-radius: 30px;
+          border-top: 5px solid white;
+          border-right: 5px solid white;
+          top: -45px;
+          left: -17px; }
+        .CV .task .circle .curvedLine_pointingUp {
+          border-bottom-right-radius: 30px;
+          border-bottom: 5px solid white;
+          border-right: 5px solid white;
+          top: -85px;
+          left: 60px; }
+        .CV .task .circle .curvedLine_pointingUpFromRight {
+          border-bottom-left-radius: 30px;
+          border-bottom: 5px solid white;
+          border-left: 5px solid white;
+          top: -85px;
+          left: -60px; }
     .CV .task .task-year {
       font-style: normal;
       font-weight: 300;
@@ -87,3 +116,6 @@ p {
       font-size: 20px;
       line-height: 27px;
       margin: 7px 0px; }
+    .CV .task .circle_right {
+      left: -20px;
+      top: -20px; }
