@@ -62,30 +62,43 @@ p {
 
 .CV {
   position: relative;
-  margin-top: 100px;
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
+  margin-top: 150px;
   width: 1000px;
+
+
+  .line {
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background-color: white;
+  }
 
   .task {
     background: rgba(196, 196, 196, 0.13);
     border-radius: 10px;
     position: relative;
     width: 350px;
+    height: 150px;
 
     &_right {
       text-align: right;
       margin-top: 100px;
-      margin-left: 38px;
     }
 
     &_left {
-      margin-bottom: 150px;
-      margin-right: 25px;
+      margin-bottom: 100px;
     }
 
+    &_firstRight {
+      margin-top: 250px;
+    }
 
+    &_firstLeft {
+      margin-top: 150px;
+    }
 
     .circle {
       border-radius: 100%;
@@ -109,37 +122,36 @@ p {
 
         &_pointingRight {
           border-top-left-radius: 30px;
-          border-top: 5px solid white;
-          border-left: 5px solid white;
-          top: -45px;
+          border-top: 7px solid white;
+          border-left: 7px solid white;
+          top: -50px;
           left: 22px;
         }
 
         &_pointingLeft {
           border-top-right-radius: 30px;
-          border-top: 5px solid white;
-          border-right: 5px solid white;
-          top: -45px;
+          border-top: 7px solid white;
+          border-right: 7px solid white;
+          top: -44px;
           left: -17px;
         }
 
         &_pointingUp {
           border-bottom-right-radius: 30px;
-          border-bottom: 5px solid white;
-          border-right: 5px solid white;
-          top: -85px;
-          left: 60px;
+          border-bottom: 7px solid white;
+          border-right: 7px solid white;
+          top: -91px;
+          left: 65px;
         }
 
         &_pointingUpFromRight {
           border-bottom-left-radius: 30px;
-          border-bottom: 5px solid white;
-          border-left: 5px solid white;
+          border-bottom: 7px solid white;
+          border-left: 7px solid white;
           top: -85px;
           left: -60px;
         }
       }
-
     }
 
     .task-year {
