@@ -1,5 +1,6 @@
 body {
   background: radial-gradient(118.45% 71.9% at -6.32% 56.87%, #1e1a20 0%, #201f49 63.54%, #1e1a20 100%);
+  background-repeat: no-repeat;
   color: white;
   font-family: "Nunito";
   margin: 0;
@@ -10,7 +11,7 @@ p {
 
 .landing {
   display: flex;
-  align-items: center; }
+  justify-content: space-around; }
   .landing .image {
     height: 400px;
     margin: 0px 30px; }
@@ -36,8 +37,7 @@ p {
     color: white; }
   .landing .cube {
     height: 500px;
-    flex-grow: 1;
-    margin-right: -50px; }
+    flex-grow: 1; }
 
 .CV {
   position: relative;
@@ -99,14 +99,14 @@ p {
           border-bottom-right-radius: 30px;
           border-bottom: 7px solid white;
           border-right: 7px solid white;
-          top: -91px;
+          top: -90px;
           left: 65px; }
         .CV .task .circle .curvedLine_pointingUpFromRight {
           border-bottom-left-radius: 30px;
           border-bottom: 7px solid white;
           border-left: 7px solid white;
-          top: -85px;
-          left: -60px; }
+          top: -84px;
+          left: -61px; }
     .CV .task .task-year {
       font-style: normal;
       font-weight: 300;
@@ -130,10 +130,44 @@ p {
 
 .separatingLine {
   margin: 0 auto;
-  width: 70%;
+  width: 1000px;
   height: 0px;
   border: 2px solid rgba(255, 255, 255, 0.8);
   background-color: rgba(255, 255, 255, 0.8); }
 
 .project {
-  background-color: black; }
+  width: 1050px;
+  margin: 0 auto;
+  margin-top: 70px; }
+  .project_mainTitle {
+    margin: 0 auto 100px;
+    width: 245px;
+    font-family: "Nunito";
+    font-size: 40px;
+    line-height: 61px; }
+  .project_container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 140px; }
+  .project_textBox {
+    width: 450px;
+    margin-right: 20px;
+    text-align: left; }
+  .project_description {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px; }
+  .project_title {
+    width: 130px;
+    height: 41px;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 41px;
+    margin: 0; }
+    .project_title_line {
+      width: 40.01px;
+      height: 0px;
+      border: 2px solid #E65763;
+      margin-bottom: 10px; }
+  .project_image {
+    width: 480px; }
