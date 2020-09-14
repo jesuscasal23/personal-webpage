@@ -1,0 +1,123 @@
+.CV {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 1000px;
+
+
+  .line {
+    position: absolute;
+    width: 10px;
+    height: 78%;
+    background-color: white;
+  }
+
+  .task {
+    background: rgba(196, 196, 196, 0.13);
+    border-radius: 10px;
+    position: relative;
+    width: 350px;
+    height: 150px;
+
+    &_right {
+      text-align: right;
+      margin-top: 100px;
+    }
+
+    &_left {
+      margin-bottom: 100px;
+    }
+
+    &_firstRight {
+      margin-top: 250px;
+    }
+
+    &_firstLeft {
+      margin-top: 150px;
+    }
+
+    .circle {
+      border-radius: 100%;
+      background: #6c06e6;
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      right: -20px;
+      top: -20px;
+      border-style: solid;
+      border-width: 4px;
+      border-color: white;
+
+      .curvedLine {
+        position: absolute;
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+
+
+        &_pointingRight {
+          border-top-left-radius: 30px;
+          border-top: 7px solid white;
+          border-left: 7px solid white;
+          top: -50px;
+          left: 22px;
+        }
+
+        &_pointingLeft {
+          border-top-right-radius: 30px;
+          border-top: 7px solid white;
+          border-right: 7px solid white;
+          top: -44px;
+          left: -17px;
+        }
+
+        &_pointingUp {
+          border-bottom-right-radius: 30px;
+          border-bottom: 7px solid white;
+          border-right: 7px solid white;
+          top: -90px;
+          left: 65px;
+        }
+
+        &_pointingUpFromRight {
+          border-bottom-left-radius: 30px;
+          border-bottom: 7px solid white;
+          border-left: 7px solid white;
+          top: -84px;
+          left: -61px;
+        }
+      }
+    }
+
+    .task-year {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 27px;
+      margin: 7px 0px;
+    }
+
+    .task-title {
+      font-style: normal;
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 27px;
+    }
+
+    .task-location {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 27px;
+      margin: 7px 0px;
+    }
+
+
+    .circle_right {
+      left: -20px;
+      top: -20px;
+    }
+  }
+}

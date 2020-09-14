@@ -1,0 +1,52 @@
+.project {
+  width: 1050px;
+  margin: 0 auto;
+  margin-top: 70px;
+
+
+  &_mainTitle {
+    margin: 0 auto 100px;
+    width: 245px;
+    font-family: "Nunito";
+    font-size: 40px;
+    line-height: 61px;
+  }
+
+  &_container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 140px;
+  }
+
+  &_textBox {
+    width: 450px;
+    margin-right: 20px;
+    text-align: left;
+  }
+
+  &_description {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  &_title {
+    width: 130px;
+    height: 41px;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 41px;
+    margin: 0;
+
+    &_line {
+      width: 40px;
+      height: 0px;
+      border: 4px solid #E65763;
+      margin-bottom: 10px;
+    }
+  }
+
+  &_image {
+    width: 480px;
+  }
+}

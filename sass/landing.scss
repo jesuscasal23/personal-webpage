@@ -1,0 +1,74 @@
+.landing {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  max-width: 1400px;
+  margin: 100px auto 0;
+
+  &_left {
+    display: flex;
+    flex-grow: 2;
+  }
+
+  .image {
+    height: 400px;
+    margin: 0px 20px;
+  }
+
+  .texcontainer {
+    width: 300px;
+  }
+
+  .mainTitle {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 50px;
+    margin: 0;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .list_elements {
+    margin-bottom: 20px;
+    width: 300px;
+    padding: 0;
+    font-family: "Montserrat";
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 500;
+    margin: 0 0 10px 20px;
+  }
+
+  .button {
+    display: block;
+    text-align: center;
+    background: linear-gradient(264.47deg, #e065ff -11.85%, #6500e4 100%);
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 27px;
+    color: white;
+    padding: 16px 20px;
+    width: 200px;
+  }
+
+  .cube {
+    height: 500px;
+    flex-grow: 1;
+    overflow: hidden;
+  }
+}
+
+.separatingLine {
+  margin: 0 auto;
+  width: 1000px;
+  height: 0px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
+}
