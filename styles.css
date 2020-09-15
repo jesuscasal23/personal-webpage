@@ -291,6 +291,9 @@
     height: 500px;
     flex-grow: 1;
     overflow: hidden; }
+  .landing a {
+    text-decoration: none;
+    color: white; }
 
 .separatingLine {
   margin: 0 auto;
