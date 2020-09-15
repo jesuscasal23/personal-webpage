@@ -268,18 +268,25 @@
     line-height: 40px;
     font-weight: 500;
     margin: 0 0 10px 20px; }
-  .landing .button {
-    display: block;
-    text-align: center;
+  .landing .btn-1 {
     background: linear-gradient(264.47deg, #e065ff -11.85%, #6500e4 100%);
-    border-radius: 20px;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 27px;
-    color: white;
-    padding: 16px 20px;
-    width: 200px; }
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 2em;
+    padding: 10px;
+    border: 0;
+    transition: all 0.5s;
+    border-radius: 100px;
+    width: 200px;
+    margin-left: 50px; }
+    .landing .btn-1:hover {
+      background: #e065ff;
+      transition: all 0.5s;
+      border-radius: 100px;
+      box-shadow: 0px 6px 15px #0000ff61;
+      padding: 14px;
+      width: 300px;
+      margin-left: 0; }
   .landing .cube {
     height: 500px;
     flex-grow: 1;
