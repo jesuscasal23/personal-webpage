@@ -216,6 +216,11 @@
     width: 450px;
     margin-right: 20px;
     text-align: left; }
+    .project_textBox:hover > .project_title_line {
+      border: 4px solid #E65763;
+      transition: width 1s;
+      width: 90px;
+      margin-bottom: 20px; }
   .project_description {
     font-weight: 500;
     font-size: 18px;
@@ -228,12 +233,16 @@
     line-height: 41px;
     margin: 0; }
     .project_title_line {
-      width: 40px;
+      width: 0;
       height: 0px;
-      border: 4px solid #E65763;
-      margin-bottom: 10px; }
+      border: 0px solid #E65763;
+      margin-bottom: 28px; }
   .project_image {
-    width: 480px; }
+    width: 480px;
+    transform: scale(1); }
+    .project_image:hover {
+      transform: scale(1.1);
+      transition: all 0.2s; }
 
 .landing {
   display: flex;
