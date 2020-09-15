@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <div id="particles-js"></div>
   <div class="navigation">
     <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
@@ -212,6 +213,39 @@
   </section>
 
   <div class="separatingLine"></div>
+
+  <div class="form">
+    <div class="form_container">
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+
+    </div>
+    <div class="form_image">
+      <img src="img/profile_image.jpg" alt="profile image" class="image" />
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS.load("particles-js","particles.json", function () {
+        console.log("particles.jseon loaded ...")
+      })
+    </script>
+  </div>
+
 
 </body>
 
