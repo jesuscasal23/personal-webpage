@@ -240,9 +240,45 @@
   .project_image {
     width: 480px;
     transform: scale(1); }
-    .project_image:hover {
+  .project_imageContainer {
+    position: relative; }
+    .project_imageContainer:hover > .project_image {
       transform: scale(1.1);
-      transition: all 0.2s; }
+      transition: all 0.2s;
+      filter: brightness(40%); }
+    .project_imageContainer:hover > .project_githubLink {
+      display: block; }
+    .project_imageContainer:hover > .project_WebpageLink {
+      display: block; }
+    .project_imageContainer a {
+      padding: 10px 20px;
+      width: 100%;
+      color: #e065ff;
+      font-size: 16px;
+      text-decoration: none;
+      text-transform: uppercase;
+      overflow: hidden;
+      transition: .5s;
+      margin-top: 40px;
+      letter-spacing: 4px; }
+  .project_githubLink {
+    position: absolute;
+    top: 55%;
+    left: 80%;
+    transform: translate(-50%, -25%);
+    border: 5px solid #c61ef0;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: none; }
+  .project_WebpageLink {
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    transform: translate(-50%, -25%);
+    border: 5px solid #c61ef0;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: none; }
 
 .landing {
   display: flex;
