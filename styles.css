@@ -119,14 +119,19 @@
   .CV .line {
     position: absolute;
     width: 10px;
-    height: 78%;
+    height: 90%;
     background-color: white; }
+  .CV .task-description {
+    display: none; }
   .CV .task {
     background: rgba(196, 196, 196, 0.4);
     border-radius: 10px;
     position: relative;
     width: 350px;
     height: 150px; }
+    .CV .task:hover {
+      height: 400px;
+      transition: all 1s; }
     .CV .task_right {
       text-align: right;
       margin-top: 100px; }

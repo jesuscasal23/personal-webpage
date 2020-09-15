@@ -9,8 +9,12 @@
   .line {
     position: absolute;
     width: 10px;
-    height: 78%;
+    height: 90%;
     background-color: white;
+  }
+
+  .task-description {
+    display: none;
   }
 
   .task {
@@ -19,6 +23,11 @@
     position: relative;
     width: 350px;
     height: 150px;
+
+    &:hover {
+      height: 400px;
+      transition: all 1s;
+    }
 
     &_right {
       text-align: right;
