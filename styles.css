@@ -125,14 +125,11 @@
     background: rgba(196, 196, 196, 0.4);
     border-radius: 10px;
     position: relative;
-    width: 350px;
-    height: 140px; }
-    .CV .task:hover {
-      height: 300px;
-      transition: all 1s; }
+    width: 350px; }
     .CV .task:hover > .task-description {
       display: block;
-      opacity: 1; }
+      opacity: 0.9;
+      height: 180px; }
     .CV .task_right {
       margin-top: 100px;
       text-align: right; }
@@ -161,12 +158,14 @@
       font-size: 20px;
       line-height: 27px;
       margin: 7px 0px;
+      margin-bottom: 20px;
       padding: 0 10px 0 10px; }
     .CV .task .task-description {
       font-size: 18px;
       opacity: 0;
       transition: all 0.4s;
-      padding: 0 10px 0 10px; }
+      padding: 0 20px 0 20px;
+      height: 0; }
   .CV .circle {
     border-radius: 100%;
     background: #6c06e6;
@@ -225,7 +224,7 @@
   .project_container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 140px; }
+    margin-bottom: 60px; }
   .project_textBox {
     width: 450px;
     margin-right: 20px;
@@ -239,6 +238,9 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 27px; }
+    .project_description a {
+      color: #e065ff;
+      opacity: 0.7; }
   .project_title {
     width: 130px;
     height: 41px;
@@ -254,6 +256,8 @@
   .project_image {
     width: 480px;
     transform: scale(1); }
+    .project_image_prodzr {
+      margin-top: 150px; }
   .project_imageContainer {
     position: relative; }
     .project_imageContainer:hover > .project_image {
@@ -305,7 +309,9 @@
     flex-grow: 2; }
   .landing .image {
     height: 400px;
-    margin: 0px 20px; }
+    margin: 0px 20px;
+    opacity: 0.85;
+    border-radius: 10px; }
   .landing .texcontainer {
     width: 300px; }
   .landing .mainTitle {
