@@ -73,6 +73,16 @@
   letter-spacing: 4px
 }
 
+.login-box form button {
+  color: #e065ff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: .5s;
+  letter-spacing: 4px;
+  background-color: transparent;
+  border: none;
+}
+
 .login-box a:hover {
   background: #e065ff;
   color: #fff;
