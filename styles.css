@@ -121,17 +121,18 @@
     width: 10px;
     height: 90%;
     background-color: white; }
-  .CV .task-description {
-    display: none; }
   .CV .task {
     background: rgba(196, 196, 196, 0.4);
     border-radius: 10px;
     position: relative;
     width: 350px;
-    height: 150px; }
+    height: 140px; }
     .CV .task:hover {
-      height: 400px;
+      height: 300px;
       transition: all 1s; }
+    .CV .task:hover > .task-description {
+      display: block;
+      opacity: 1; }
     .CV .task_right {
       text-align: right;
       margin-top: 100px; }
@@ -199,6 +200,10 @@
       font-size: 20px;
       line-height: 27px;
       margin: 7px 0px; }
+    .CV .task .task-description {
+      font-size: 18px;
+      opacity: 0;
+      transition: all 1s; }
     .CV .task .circle_right {
       left: -20px;
       top: -20px; }

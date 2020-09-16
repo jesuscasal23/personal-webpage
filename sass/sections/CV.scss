@@ -6,6 +6,8 @@
   width: 1000px;
 
 
+
+
   .line {
     position: absolute;
     width: 10px;
@@ -13,20 +15,21 @@
     background-color: white;
   }
 
-  .task-description {
-    display: none;
-  }
-
   .task {
     background: rgba(196, 196, 196, 0.4);
     border-radius: 10px;
     position: relative;
     width: 350px;
-    height: 150px;
+    height: 140px;
 
     &:hover {
-      height: 400px;
+      height: 300px;
       transition: all 1s;
+    }
+
+    &:hover>.task-description {
+      display: block;
+      opacity: 1;
     }
 
     &_right {
@@ -121,6 +124,12 @@
       font-size: 20px;
       line-height: 27px;
       margin: 7px 0px;
+    }
+
+    .task-description {
+      font-size: 18px;
+      opacity: 0;
+      transition: all 1s;
     }
 
 
