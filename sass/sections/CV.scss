@@ -5,9 +5,6 @@
   margin: 0 auto;
   width: 1000px;
 
-
-
-
   .line {
     position: absolute;
     width: 10px;
@@ -33,12 +30,13 @@
     }
 
     &_right {
-      text-align: right;
       margin-top: 100px;
+      text-align: right;
     }
 
     &_left {
       margin-bottom: 100px;
+
     }
 
     &_firstRight {
@@ -49,73 +47,22 @@
       margin-top: 150px;
     }
 
-    .circle {
-      border-radius: 100%;
-      background: #6c06e6;
-      height: 50px;
-      width: 50px;
-      position: absolute;
-      right: -20px;
-      top: -20px;
-      border-style: solid;
-      border-width: 4px;
-      border-color: white;
-
-      .curvedLine {
-        position: absolute;
-        left: 50%;
-        width: 40px;
-        height: 40px;
-        background-color: transparent;
-
-
-        &_pointingRight {
-          border-top-left-radius: 30px;
-          border-top: 7px solid white;
-          border-left: 7px solid white;
-          top: -50px;
-          left: 22px;
-        }
-
-        &_pointingLeft {
-          border-top-right-radius: 30px;
-          border-top: 7px solid white;
-          border-right: 7px solid white;
-          top: -50px;
-          left: -17px;
-        }
-
-        &_pointingUp {
-          border-bottom-right-radius: 30px;
-          border-bottom: 7px solid white;
-          border-right: 7px solid white;
-          top: -90px;
-          left: 65px;
-        }
-
-        &_pointingUpFromRight {
-          border-bottom-left-radius: 30px;
-          border-bottom: 7px solid white;
-          border-left: 7px solid white;
-          top: -90px;
-          left: -61px;
-        }
-      }
-    }
-
     .task-year {
       font-style: normal;
       font-weight: 300;
       font-size: 20px;
       line-height: 27px;
-      margin: 7px 0px;
+      margin: 7px 0;
+      padding: 6px 10px 0 10px;
+
     }
 
     .task-title {
-      font-style: normal;
       font-weight: 900;
       font-size: 20px;
       line-height: 27px;
+      padding: 0 10px 0 10px;
+      margin: 7px 0px;
     }
 
     .task-location {
@@ -124,18 +71,73 @@
       font-size: 20px;
       line-height: 27px;
       margin: 7px 0px;
+      padding: 0 10px 0 10px;
     }
 
     .task-description {
       font-size: 18px;
       opacity: 0;
       transition: all 1s;
+      padding: 0 10px 0 10px;
     }
+  }
 
+  .circle {
+    border-radius: 100%;
+    background: #6c06e6;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: white;
 
-    .circle_right {
+    &_right {
       left: -20px;
       top: -20px;
+    }
+
+    .curvedLine {
+      position: absolute;
+      left: 50%;
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+
+
+      &_pointingRight {
+        border-top-left-radius: 30px;
+        border-top: 7px solid white;
+        border-left: 7px solid white;
+        top: -50px;
+        left: 22px;
+      }
+
+      &_pointingLeft {
+        border-top-right-radius: 30px;
+        border-top: 7px solid white;
+        border-right: 7px solid white;
+        top: -50px;
+        left: -17px;
+      }
+
+      &_pointingUp {
+        border-bottom-right-radius: 30px;
+        border-bottom: 7px solid white;
+        border-right: 7px solid white;
+        top: -90px;
+        left: 65px;
+      }
+
+      &_pointingUpFromRight {
+        border-bottom-left-radius: 30px;
+        border-bottom: 7px solid white;
+        border-left: 7px solid white;
+        top: -90px;
+        left: -61px;
+      }
     }
   }
 }

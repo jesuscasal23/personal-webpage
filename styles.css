@@ -134,79 +134,83 @@
       display: block;
       opacity: 1; }
     .CV .task_right {
-      text-align: right;
-      margin-top: 100px; }
+      margin-top: 100px;
+      text-align: right; }
     .CV .task_left {
       margin-bottom: 100px; }
     .CV .task_firstRight {
       margin-top: 250px; }
     .CV .task_firstLeft {
       margin-top: 150px; }
-    .CV .task .circle {
-      border-radius: 100%;
-      background: #6c06e6;
-      height: 50px;
-      width: 50px;
-      position: absolute;
-      right: -20px;
-      top: -20px;
-      border-style: solid;
-      border-width: 4px;
-      border-color: white; }
-      .CV .task .circle .curvedLine {
-        position: absolute;
-        left: 50%;
-        width: 40px;
-        height: 40px;
-        background-color: transparent; }
-        .CV .task .circle .curvedLine_pointingRight {
-          border-top-left-radius: 30px;
-          border-top: 7px solid white;
-          border-left: 7px solid white;
-          top: -50px;
-          left: 22px; }
-        .CV .task .circle .curvedLine_pointingLeft {
-          border-top-right-radius: 30px;
-          border-top: 7px solid white;
-          border-right: 7px solid white;
-          top: -50px;
-          left: -17px; }
-        .CV .task .circle .curvedLine_pointingUp {
-          border-bottom-right-radius: 30px;
-          border-bottom: 7px solid white;
-          border-right: 7px solid white;
-          top: -90px;
-          left: 65px; }
-        .CV .task .circle .curvedLine_pointingUpFromRight {
-          border-bottom-left-radius: 30px;
-          border-bottom: 7px solid white;
-          border-left: 7px solid white;
-          top: -90px;
-          left: -61px; }
     .CV .task .task-year {
       font-style: normal;
       font-weight: 300;
       font-size: 20px;
       line-height: 27px;
-      margin: 7px 0px; }
+      margin: 7px 0;
+      padding: 6px 10px 0 10px; }
     .CV .task .task-title {
-      font-style: normal;
       font-weight: 900;
       font-size: 20px;
-      line-height: 27px; }
+      line-height: 27px;
+      padding: 0 10px 0 10px;
+      margin: 7px 0px; }
     .CV .task .task-location {
       font-style: normal;
       font-weight: 500;
       font-size: 20px;
       line-height: 27px;
-      margin: 7px 0px; }
+      margin: 7px 0px;
+      padding: 0 10px 0 10px; }
     .CV .task .task-description {
       font-size: 18px;
       opacity: 0;
-      transition: all 1s; }
-    .CV .task .circle_right {
+      transition: all 1s;
+      padding: 0 10px 0 10px; }
+  .CV .circle {
+    border-radius: 100%;
+    background: #6c06e6;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: white; }
+    .CV .circle_right {
       left: -20px;
       top: -20px; }
+    .CV .circle .curvedLine {
+      position: absolute;
+      left: 50%;
+      width: 40px;
+      height: 40px;
+      background-color: transparent; }
+      .CV .circle .curvedLine_pointingRight {
+        border-top-left-radius: 30px;
+        border-top: 7px solid white;
+        border-left: 7px solid white;
+        top: -50px;
+        left: 22px; }
+      .CV .circle .curvedLine_pointingLeft {
+        border-top-right-radius: 30px;
+        border-top: 7px solid white;
+        border-right: 7px solid white;
+        top: -50px;
+        left: -17px; }
+      .CV .circle .curvedLine_pointingUp {
+        border-bottom-right-radius: 30px;
+        border-bottom: 7px solid white;
+        border-right: 7px solid white;
+        top: -90px;
+        left: 65px; }
+      .CV .circle .curvedLine_pointingUpFromRight {
+        border-bottom-left-radius: 30px;
+        border-bottom: 7px solid white;
+        border-left: 7px solid white;
+        top: -90px;
+        left: -61px; }
 
 .project {
   width: 1050px;
@@ -244,8 +248,8 @@
     margin: 0; }
     .project_title_line {
       width: 0;
-      height: 0px;
-      border: 0px solid #E65763;
+      height: 0;
+      border: 0 solid #E65763;
       margin-bottom: 28px; }
   .project_image {
     width: 480px;
