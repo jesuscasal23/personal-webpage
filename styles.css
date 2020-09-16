@@ -255,7 +255,8 @@
       margin-bottom: 28px; }
   .project_image {
     width: 480px;
-    transform: scale(1); }
+    transform: scale(1);
+    border-radius: 17px; }
     .project_image_prodzr {
       margin-top: 150px; }
   .project_imageContainer {

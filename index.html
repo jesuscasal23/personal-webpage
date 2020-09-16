@@ -221,7 +221,7 @@
   <div class="form">
     <div class="login-box">
       <h2>Contact me</h2>
-      <form>
+      <form name="contact" data-netlify="true" method="POST" >
 
         <div class="user-box">
           <input type="text" name="name" required="true">
@@ -229,14 +229,14 @@
         </div>
 
         <div class="user-box">
-          <input type="email" name="Email" required="true">
+          <input type="email" name="email" required="true">
           <label>Email</label>
         </div>
         <div class="user-box">
           <input type="text" name="message" required="false">
           <label>Message</label>
         </div>
-        <a href="#">
+        <a href="#" type="submit">
           <span></span>
           <span></span>
           <span></span>
