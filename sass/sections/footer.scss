@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  -webkit-box-shadow: -1px -9px 17px 1px rgba(224, 101, 255, 1);
+  -moz-box-shadow: -1px -9px 17px 1px rgba(224, 101, 255, 1);
+  box-shadow: -1px -9px 17px 1px rgba(224, 101, 255, 1);
+
+  &_item {
+    padding: 10px 0;
+    color: #e065ff;
+    opacity: 0.9;
+    margin: 10px 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: "Nunito";
+  }
+
+  a {
+    color: #e065ff;
+    opacity: 0.9;
+  }
+}
