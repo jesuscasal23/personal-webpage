@@ -128,21 +128,28 @@
   transform: rotate(-135deg); }
 
 .CV {
-  position: relative;
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-  width: 1000px; }
+  max-width: 1000px;
+  position: relative; }
   .CV .line {
     position: absolute;
     width: 10px;
     height: 90%;
     background-color: white; }
+    @media screen and (max-width: 1000px) {
+      .CV .line {
+        display: none; } }
   .CV .task {
+    position: relative;
     background: rgba(196, 196, 196, 0.4);
     border-radius: 10px;
     position: relative;
     width: 350px; }
+    @media screen and (max-width: 1000px) {
+      .CV .task {
+        width: 280px; } }
     .CV .task:hover > .task-description {
       display: block;
       opacity: 0.9;
@@ -194,6 +201,9 @@
     border-style: solid;
     border-width: 4px;
     border-color: white; }
+    @media screen and (max-width: 1000px) {
+      .CV .circle {
+        display: none; } }
     .CV .circle_right {
       left: -20px;
       top: -20px; }
@@ -582,6 +592,27 @@
   .footer a {
     color: #e065ff;
     opacity: 0.9; }
+
+.error {
+  display: flex; }
+  .error_message {
+    display: none;
+    font-family: "Nunito";
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 50px; }
+    @media screen and (max-width: 700px) {
+      .error_message {
+        display: block;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: grey;
+        color: red;
+        margin: 0 auto;
+        z-index: 20000;
+        text-align: center;
+        padding-top: 45vh; } }
 
 body {
   background: radial-gradient(118.45% 71.9% at -6.32% 56.87%, #1e1a20 0%, #201f49 63.54%, #1e1a20 100%);
