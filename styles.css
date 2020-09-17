@@ -316,7 +316,9 @@
       .project_image {
         margin-top: 100px; } }
     .project_image_prodzr {
-      margin-top: 150px; }
+      margin-top: 150px;
+      width: 480px;
+      height: 314px; }
       @media screen and (max-width: 1000px) {
         .project_image_prodzr {
           margin-top: 100px; } }
@@ -421,6 +423,9 @@
   height: 0px;
   border: 2px solid rgba(255, 255, 255, 0.8);
   background-color: rgba(255, 255, 255, 0.8); }
+  @media screen and (max-width: 1000px) {
+    .separatingLine {
+      width: 650px; } }
 
 .form {
   position: relative;
