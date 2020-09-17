@@ -5,13 +5,11 @@
   max-width: 1400px;
   margin: 100px auto 0;
 
-  @media screen and (max-width: 700px) {
-    background-color: firebrick;
-  }
-
   &_left {
     display: flex;
     flex-grow: 2;
+    justify-content: center;
+    margin-bottom: 50px;
   }
 
   .image {
@@ -78,6 +76,11 @@
     height: 500px;
     flex-grow: 1;
     overflow: hidden;
+
+    @media screen and (max-width: 1000px) {
+      display: none;
+      flex-grow: 0.1;
+    }
   }
 
   a {

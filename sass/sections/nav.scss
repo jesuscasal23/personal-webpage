@@ -16,6 +16,11 @@
     text-align: center;
     cursor: pointer;
     border: solid 1px #e065ff;
+
+    @media screen and (max-width: 1000px) {
+      height: 4rem;
+      width: 4rem;
+    }
   }
 
   &__background {
@@ -31,6 +36,11 @@
         #1e1a20 100%);
     z-index: 1000;
     transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+
+    @media screen and (max-width: 1000px) {
+      height: 4rem;
+      width: 4rem;
+    }
 
   }
 
@@ -75,6 +85,10 @@
       background-size: 220%;
       transition: all .4s;
 
+      @media screen and (max-width: 1000px) {
+        font-size: 2rem;
+      }
+
       span {
         margin-right: 1.5rem;
         display: inline-block;
@@ -105,6 +119,10 @@
     position: relative;
     margin-top: 3.5rem;
 
+    @media screen and (max-width: 1000px) {
+      margin-top: 2rem;
+    }
+
     &,
     &::before,
     &::after {
@@ -112,6 +130,10 @@
       height: 2px;
       background-color: darkgray;
       display: inline-block;
+
+      @media screen and (max-width: 1000px) {
+        width: 2.5rem;
+      }
     }
 
     &::before,

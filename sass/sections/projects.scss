@@ -1,5 +1,5 @@
 .project {
-  width: 1050px;
+  max-width: 1050px;
   margin: 0 auto;
   margin-top: 70px;
 
@@ -16,12 +16,17 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
+
+    @media screen and (max-width: 1000px) {
+      display: block;
+    }
   }
 
   &_textBox {
     width: 450px;
     margin-right: 20px;
     text-align: left;
+    margin: 0 auto;
 
     &:hover>.project_title_line {
       border: 4px solid #E65763;
@@ -58,18 +63,9 @@
     }
   }
 
-  &_image {
-    width: 480px;
-    transform: scale(1.0);
-    border-radius: 17px;
-
-    &_prodzr {
-      margin-top: 150px;
-    }
-  }
-
   &_imageContainer {
     position: relative;
+    display: flex;
 
     &:hover>.project_image {
       transform: scale(1.1);
@@ -99,25 +95,55 @@
     }
   }
 
+  &_image {
+    width: 480px;
+    transform: scale(1.0);
+    border-radius: 17px;
+    margin: 0 auto;
+    position: relative;
+
+    @media screen and (max-width: 1000px) {
+      margin-top: 100px;
+    }
+
+    &_prodzr {
+      margin-top: 150px;
+
+      @media screen and (max-width: 1000px) {
+        margin-top: 100px;
+      }
+    }
+  }
+
   &_githubLink {
     position: absolute;
-    top: 55%;
+    top: 45%;
     left: 80%;
     transform: translate(-50%, -25%);
     border: 5px solid #c61ef0;
     padding: 10px 20px;
     border-radius: 50px;
     display: none;
+
+    @media screen and (max-width: 1000px) {
+      top: 53%;
+      left: 68%;
+    }
   }
 
   &_WebpageLink {
     position: absolute;
-    top: 55%;
+    top: 45%;
     left: 30%;
     transform: translate(-50%, -25%);
     border: 5px solid #c61ef0;
     padding: 10px 20px;
     border-radius: 50px;
     display: none;
+
+    @media screen and (max-width: 1000px) {
+      top: 53%;
+      left: 34%;
+    }
   }
 }
